@@ -1,0 +1,11 @@
+{
+  "name": "fylo-data-storage-component-master",
+  "version": "1.0.0",
+  "description": "my solution for frontendmentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles.scss:./css/style.css"
+  },
+  "author": "Dexkode",
+  "license": "ISC"
+}

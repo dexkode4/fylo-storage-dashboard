@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0c0927;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 26em) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.attribution {
+  font-size: 1.3rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  color: #3e52a3;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.chat-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 80px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  position: relative;
+  border-bottom-right-radius: 0px;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+@media (max-width: 23.5em) {
+  .chat-box {
+    border-radius: 7px;
+    width: 100px;
+    height: 60px;
+  }
+}
+.chat-box::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-right: 25px solid #fff;
+  border-bottom: 25px solid transparent;
+  top: 99%;
+  left: 86.3%;
+}
+@media (max-width: 23.5em) {
+  .chat-box::after {
+    display: none;
+  }
+}
+.chat-box_number {
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media (max-width: 23.5em) {
+  .chat-box_number {
+    font-size: 1.5rem;
+  }
+}
+.chat-box_text {
+  font-size: 0.85rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+@media (max-width: 23.5em) {
+  .chat-box_text {
+    font-size: 0.7rem;
+    margin-left: 0.6rem;
+  }
+}
+
+.fylo {
+  width: 250px;
+  height: 150px;
+  background-color: #130f40;
+  border-top-right-radius: 100px;
+  color: #fff;
+  padding: 2rem 0 0 2rem;
+}
+@media (max-width: 23.5em) {
+  .fylo {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    width: 68%;
+  }
+}
+.fylo_icon {
+  font-size: 1.4rem;
+}
+.fylo_text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.fylo_action {
+  display: flex;
+  margin-top: 2rem;
+}
+.fylo_action > *:not(:first-child) {
+  margin-left: 1rem;
+}
+.fylo_action > * {
+  background-color: #09071f;
+  border-radius: 7px;
+  color: #2c2293;
+  color: #686de0;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storage {
+  width: 400px;
+  height: 100px;
+  background-color: #130f40;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 2rem;
+  position: relative;
+  margin-left: 2rem;
+  margin-bottom: -1rem;
+}
+@media (max-width: 23.5em) {
+  .storage {
+    display: flex;
+    flex-direction: column;
+    width: 59%;
+    margin: 0 auto;
+  }
+}
+.storage .chat-box--container {
+  position: absolute;
+  left: 54%;
+  top: -30%;
+}
+@media (max-width: 23.5em) {
+  .storage .chat-box--container {
+    position: relative;
+    transform: translate(-36%, 65%);
+  }
+}
+.storage span {
+  font-weight: 600;
+}
+.storage_progress {
+  background-color: #09071f;
+  border-radius: 100px;
+  height: 1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.storage_progress-bar {
+  width: 75%;
+  height: 0.8rem;
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 100px;
+  margin-left: 0.2rem;
+  position: relative;
+}
+.storage_progress-bar::after {
+  content: "";
+  border-radius: 50%;
+  display: block;
+  height: 0.6rem;
+  width: 0.6rem;
+  position: absolute;
+  top: 50%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+@media (max-width: 23.5em) {
+  .storage_progress-bar::after {
+    left: 96%;
+  }
+}
+.storage_capacity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */
