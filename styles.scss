@@ -31,8 +31,10 @@ body {
   text-align: center;
   position: absolute;
   bottom: 0;
-
   color: hsl(228, 45%, 44%);
+  @media (max-width: 26em) {
+    font-size: 1rem;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
